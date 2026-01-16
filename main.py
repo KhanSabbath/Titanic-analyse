@@ -37,3 +37,8 @@ X_test.loc[:, num_cols] = imputer.transform(X_test[num_cols])
 meds = X_train[num_cols].median()
 X_train.loc[:, num_cols] = X_train[num_cols].fillna(meds)
 X_test.loc[:, num_cols] = X_test[num_cols].fillna(meds)
+
+#List comprehension exemplo:
+listao=[1,2,3]
+[i for i in listao if i % 2 == 0]
+
